@@ -1,4 +1,3 @@
-
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -7,6 +6,7 @@ const server = http.createServer((req, res) => {
   if (url === '/home') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Welcome home');
+    //console.log(req.query);
   } else if (url === '/about') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Welcome to About Us page');
